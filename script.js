@@ -97,3 +97,11 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
 });
+document.addEventListener("DOMContentLoaded", function () {
+
+    if (document.body.classList.contains("cinema-body")) {
+        startCinema();
+    }
+
+});
+
