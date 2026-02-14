@@ -246,13 +246,17 @@ section:hover {
 /* Question section */
 .hidden-question {
     opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
     margin-top: 40px;
     transition: opacity 1.5s ease;
 }
 
 .show-question {
     opacity: 1;
+    visibility: visible;
 }
+
 
 .buttons {
     margin-top: 20px;
@@ -298,5 +302,6 @@ section:hover {
     50% { transform: scale(1.2); }
     100% { transform: scale(1.1); }
 }
+
 
 
