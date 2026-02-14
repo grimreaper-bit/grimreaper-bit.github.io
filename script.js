@@ -76,7 +76,7 @@ document.addEventListener("DOMContentLoaded", function () {
             textElement.style.opacity = 0;
 
             setTimeout(() => {
-                textElement.textContent = "Promise I will keep you happy for life. ❤️";
+                textElement.textContent = "Promise...\nI will keep you happy for life. ❤️";
                 textElement.style.opacity = 1;
                 textElement.style.fontSize = "3rem";
             }, 1000);
@@ -104,5 +104,6 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
 });
+
 
 
