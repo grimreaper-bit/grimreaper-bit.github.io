@@ -205,7 +205,7 @@ section {
 section:hover {
     transform: scale(1.035);
     box-shadow:
-        0 45px 90px rgba(0, 0, 0, 0.22),
+        0 45px 90px rgba(139, 120, 120, 0.22),
         inset 0 0 35px rgba(255, 255, 255, 0.75);
 }
 /* Cinematic page */
@@ -242,6 +242,61 @@ section:hover {
     color: #7a1f2c;
     opacity: 0;
     transition: opacity 1.5s ease;
+}
+/* Question section */
+.hidden-question {
+    opacity: 0;
+    margin-top: 40px;
+    transition: opacity 1.5s ease;
+}
+
+.show-question {
+    opacity: 1;
+}
+
+.buttons {
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Yes button glow */
+#yesBtn {
+    background: linear-gradient(135deg, #ff758c, #ff7eb3);
+    color: white;
+    border-radius: 30px;
+    padding: 14px 30px;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+#yesBtn:hover {
+    transform: scale(1.1);
+}
+
+/* No button */
+#noBtn {
+    background: #ccc;
+    color: #333;
+    border-radius: 30px;
+    padding: 14px 30px;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    transition: 0.2s ease;
+}
+
+/* YES cinematic effect */
+.cinema-yes {
+    animation: yesGlow 2s ease forwards;
+}
+
+@keyframes yesGlow {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1.1); }
 }
 
 
