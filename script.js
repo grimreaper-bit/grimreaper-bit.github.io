@@ -56,6 +56,11 @@ function startCinema() {
 }
 document.addEventListener("DOMContentLoaded", function () {
 
+    // Run cinema ONLY on love.html
+    if (document.body.classList.contains("cinema-body")) {
+        startCinema();
+    }
+
     const yesBtn = document.getElementById("yesBtn");
     const noBtn = document.getElementById("noBtn");
     const textElement = document.getElementById("cinemaText");
@@ -92,7 +97,8 @@ document.addEventListener("DOMContentLoaded", function () {
             const randomY = Math.random() * 200 - 100;
 
             noBtn.style.position = "relative";
-            noBtn.style.transform = `translate(${randomX}px, ${randomY}px)`;
+            noBtn.style.transform =
+                `translate(${randomX}px, ${randomY}px)`;
         });
     }
 
